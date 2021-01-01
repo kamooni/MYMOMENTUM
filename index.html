@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Goldman:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./clock.js" defer></script>
+    <script src="./greeting.js" defer></script>
+    <script src="./todo.js" defer></script>
+    <script src="./bg.js" defer></script>
+    <title>Momentuum</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header><span>🤑</span></header>
+      <section class="main-section">
+        <div class="container main-container">
+          <button class="todo-btn">TODO</button>
+          <div class="todo-wrap">
+            <form class="todo-form">
+              <input type="text" placeholder="할일을 적자 !!" />
+            </form>
+            <ul class="todo-list"></ul>
+          </div>
+          <div class="js-clock clock">
+            <h1 class="js-title">00:00</h1>
+          </div>
+          <div class="form-wrap">
+            <form class="js-form form">
+              <input
+                type="text"
+                placeholder="What is your name ? "
+                maxlength="10"
+              />
+            </form>
+          </div>
+          <div class="greeting-wrap">
+            <span class="js-greeting greeting"></span>
+            <span class="time-greeting"></span>
+            <button class="logout-btn">LOGOUT</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
